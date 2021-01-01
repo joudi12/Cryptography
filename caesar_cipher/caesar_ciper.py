@@ -2,8 +2,6 @@ import nltk
 nltk.download('words')
 words_list= nltk.corpus.words.words()
 
-
-
 def encrypt(msg, key):
     alphabet=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     result=''
@@ -54,6 +52,7 @@ def cipher_breaker(msg):
         if count_words > max:
             max_english_sentence = decrypted
     return max_english_sentence    
+
 
 if __name__ == "__main__":
     msg = encrypt('abcdefghijklmnopqrstuvwxyz',3) 
